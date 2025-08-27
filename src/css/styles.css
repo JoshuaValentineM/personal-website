@@ -1,0 +1,402 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header.bg-primary {
+    background-color: black !important;
+}
+
+.navbar{
+  background-color: black !important;
+  opacity: 0.8;
+}
+
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Typing Animation Styles */
+.cursor {
+  display: inline-block;
+  animation: blink 0.9s steps(1) infinite;
+}
+
+.normal-cursor {
+  display: inline-block;
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Profile Photo Styles */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 25%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #e2e6ea !important;
+}
+
+/* highlight active nav link (optional) */
+.navbar .nav-link.active {
+    color: #ffc107 !important;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-custom {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+    color: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 1.5rem;
+  padding-left: 2.2rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.85rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: black;
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2.6rem; /* tambahkan: beri ruang lebih untuk teks */
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 4px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.15);
+  background-color: black;
+}
+.timeline-content {
+  /* baru: memberi sedikit offset tambahan dan memastikan tidak menempel */
+  margin: 0;
+}
+.timeline-content h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+.timeline-content p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+.timeline-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .6rem;
+  margin: 0 0 .35rem;
+}
+.timeline-date {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  background: #212529;
+  color: #fff;
+  padding: 3px 10px 2px;
+  border-radius: 999px;
+  line-height: 1;
+}
+.timeline-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.timeline-content p {
+  margin-top: 0;
+}
+/* optional subtle divider */
+.timeline-content + .timeline-item .timeline-heading {
+  padding-top: .25rem;
+}
+/* responsive tweak */
+@media (max-width:576px) {
+  .timeline-heading {
+    flex-direction: row;
+  }
+  .timeline-title {
+    flex: 1 1 100%;
+  }
+}
+
+/* Project card image sizing refinement */
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;          /* keeps consistent shape */
+  background: #111;
+  overflow: hidden;
+}
+
+.project-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.18), rgba(0,0,0,0));
+  pointer-events: none;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* crops nicely */
+  display: block;
+  transition: transform .6s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.06);
+}
+
+/* Make logo-like images fit without cropping; improve mobile behavior */
+.project-image--contain {
+  object-fit: contain;
+  background: #fff; /* so transparent PNGs sit on white */
+}
+
+/* Prevent zoom on contain images to avoid awkward edges */
+.project-card:hover .project-image--contain {
+  transform: none;
+}
+
+/* Mobile tweaks: ensure image always fills wrapper correctly */
+@media (max-width: 575.98px) {
+  .project-image {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Fallback for browsers without aspect-ratio */
+@supports not (aspect-ratio: 16 / 9) {
+  .project-image-wrapper {
+    padding-top: 56.25%;
+  }
+  .project-image {
+    position: absolute;
+    top:0; left:0;
+  }
+}
+
+/* Smaller screens: slightly taller for readability */
+@media (max-width: 575.98px) {
+  .project-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Social Links Styles */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+.social-links a {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  transition: background .3s ease, transform .3s ease, box-shadow .3s ease;
+}
+.social-links .icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: fill .3s ease;
+}
+.social-links a:hover {
+  background: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px -4px rgba(0,0,0,.3);
+}
+.social-links a:hover .icon {
+  fill: #000;
+}
+
+@media (max-width: 575.98px) {
+  .social-links {
+    gap: 0.7rem;
+  }
+  .social-links a {
+    width: 40px;
+    height: 40px;
+  }
+  .social-links .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+section {
+  position: relative;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+section:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #bbb, transparent);
+}
+
+/* Experience two-column adjustments */
+#experience .h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#experience h2 {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+#experience .col-lg-10 {
+  /* optional slight card feel */
+  /* padding: .5rem 0 0; */
+}
+@media (min-width: 992px) {
+  #experience .col-md-6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Preserve anchor offset for moved IDs (were sections before) */
+#organizations,
+#work-experiences {
+  scroll-margin-top: 86px; /* adjust if navbar height changes */
+}
+
+/* On small screens stack with spacing */
+@media (max-width: 767.98px) {
+  #experience .col-md-6 + .col-md-6 {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Optional: independent timeline lines in columns already OK due to relative parent */
+#experience .timeline::before {
+  background: black;
+}
+
+:root {
+  --accent: #0d6efd;
+  --accent-dark: #0a58ca;
+}
+/* Projects header CTA */
+.projects-header .btn-portfolio {
+  display: inline-flex;
+  align-items: center;
+  padding: .45rem .85rem;
+  border-radius: 999px;
+  border: 1px solid #000;   /* changed */
+  color: #fff;               /* changed */
+  background: #000;          /* changed */
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-decoration: none;
+  transition: color .25s ease, background-color .25s ease, box-shadow .25s ease, transform .2s ease, border-color .25s ease;
+}
+.projects-header .btn-portfolio .icon-external {
+  width: 16px;
+  height: 16px;
+  margin-right: .5rem;
+  flex: 0 0 16px;
+}
+.projects-header .btn-portfolio:hover {
+  color: #000;               /* changed */
+  background: #fff;          /* changed */
+  border-color: #000;        /* ensure border stays black */
+  box-shadow: 0 8px 22px -8px rgba(0,0,0,.35); /* changed */
+  transform: translateY(-2px);
+}
+.projects-header .btn-portfolio:active {
+  transform: translateY(-1px) scale(.98);
+}
+.projects-header .btn-portfolio:focus {
+  outline: none;
+  box-shadow: 0 0 0 .2rem rgba(0,0,0,.25); /* changed */
+}
+.projects-header .btn-portfolio { margin-left: .75rem; }
+/* Stack nicely on small screens */
+@media (max-width: 575.98px) {
+  .projects-header {
+    gap: .5rem; /* has no effect in BS4, but harmless; we rely on margins */
+  }
+  .projects-header .btn-portfolio {
+    margin-top: .25rem;
+  }
+}

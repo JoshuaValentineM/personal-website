@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua's Portfolio'</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand font-weight-bold" href="#about"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#organizations">Organizations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work-experiences">Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Hi! <span id="typing-text"></span><span class="cursor">|</span></h1>
+        <p>Computer Science Graduate from Binus University</p>
+    </header>
+    <main class="container mt-5">
+        <!-- About -->
+        <section id="about" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="assets/profile-photo.jpg" alt="Joshua's Photo" class="rounded-circle img-fluid profile-photo">
+                </div>
+                <div class="col-md-8">
+                    <h2>Joshua Valentine Manik, S.Kom.</h2>
+                    <p>As a Computer Science graduate from Binus University, I'm driven by a strong passion for technology and a commitment to continuous learning. I'm actively searching for opportunities to leverage my skills to develop impactful, innovative solutions that benefit society. I'm confident in my ability to work effectively with new teams and perform under pressure, and I'm excited to bring my enthusiasm and dedication to a new role.</p>
+
+                    <!-- Contact / Social Icons -->
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/joshuavalentinee" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.51 5.51 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm5.75-4.25a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"></path></svg>
+                        </a>
+                        <a href="https://wa.me/6287874857332" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M12.04 2a9.93 9.93 0 0 0-8.6 14.98L2 22l5.2-1.36A9.94 9.94 0 1 0 12.04 2zm0 18.13a8.15 8.15 0 0 1-4.15-1.14l-.3-.18-3.08.8.82-3-.2-.31A8.16 8.16 0 1 1 12.04 20.13zm4.47-5.83c-.24-.12-1.42-.7-1.64-.78s-.38-.12-.54.12-.62.78-.76.94-.28.18-.52.06a6.63 6.63 0 0 1-1.94-1.2 7.21 7.21 0 0 1-1.33-1.65c-.14-.24 0-.37.1-.49.1-.1.24-.28.36-.42s.16-.24.24-.4a.43.43 0 0 0 0-.42c-.06-.12-.54-1.28-.74-1.76s-.4-.4-.54-.4h-.46a.9.9 0 0 0-.64.3 2.69 2.69 0 0 0-.84 2c0 1.18.86 2.32.98 2.48s1.7 2.58 4.14 3.52a13.4 13.4 0 0 0 1.34.4 3.23 3.23 0 0 0 1.48.09c.46-.07 1.42-.58 1.62-1.16s.2-1.06.14-1.16-.22-.16-.46-.28z"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joshuavalentinem" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.11.9-2 2-2h14zM8.34 17v-7H5.67v7h2.67zM7 8.73c.86 0 1.4-.57 1.4-1.28-.02-.73-.54-1.28-1.38-1.28S5.6 6.7 5.6 7.45c0 .71.54 1.28 1.36 1.28H7zm10 8.27v-3.89c0-1.96-1.04-2.87-2.43-2.87a2.1 2.1 0 0 0-1.91 1.05h-.03V10H10.6v7h2.67v-3.68c0-.97.18-1.9 1.38-1.9s1.2 1.15 1.2 1.96V17H17z"/></svg>
+                        </a>
+                        <a href="mailto:joshuavalentinem@gmail.com" aria-label="Email">
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M20 4H4a2 2 0 0 0-2 2v.01L12 13l10-6.99V6a2 2 0 0 0-2-2zm0 4.24-7.6 4.74a1 1 0 0 1-1.04 0L4 8.24V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.24z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-5">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div class="timeline-content">
+                        <div class="timeline-heading">
+                            <span class="timeline-date">2021–2025</span>
+                            <h5 class="timeline-title">Binus University</h5>
+                        </div>
+                        <p>Bachelor of Computer Science. GPA: 3.91 - Awarded Summa Cum Laude</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div class="timeline-content">
+                        <div class="timeline-heading">
+                            <span class="timeline-date">2018–2021</span>
+                            <h5 class="timeline-title">SMA Regina Pacis Bogor</h5>
+                        </div>
+                        <p>Science major</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience (Organizational + Work in 2 columns) -->
+        <section id="experience" class="mb-5">
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <!-- Organizational -->
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <h3 id="organizations" class="text-center h4">Organizational</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="timeline-marker"></span>
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <span class="timeline-date">2022–2023</span>
+                                            <h5 class="timeline-title">BNCC – Editorial Coordinator (Filemagz)</h5>
+                                        </div>
+                                        <p>Description of my role and contributions.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-marker"></span>
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <span class="timeline-date">2021–2022</span>
+                                            <h5 class="timeline-title">BNCC – Activist</h5>
+                                        </div>
+                                        <p>Description of my role and contributions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Work & Internship -->
+                        <div class="col-md-6">
+                            <h3 id="work-experiences" class="text-center h4">Work & Internship</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="timeline-marker"></span>
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <span class="timeline-date">2023–2024</span>
+                                            <h5 class="timeline-title">BINUS IT Division - Associate Member</h5>
+                                        </div>
+                                        <p>Role summary. Tech used: React, Node.js, etc.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-marker"></span>
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <span class="timeline-date">2024–2025</span>
+                                            <h5 class="timeline-title">PT Hartono Istana Teknologi (Polytron) - Application Developer</h5>
+                                        </div>
+                                        <p>Built small web apps / landing pages for clients.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-marker"></span>
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <span class="timeline-date">2025–Present</span>
+                                            <h5 class="timeline-title">PT Hartono Istana Teknologi (Polytron) - Import Documentation Officer</h5>
+                                        </div>
+                                        <p>Built small web apps / landing pages for clients.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-5">
+            <div class="projects-header d-flex align-items-center mb-3">
+                <h2 class="mb-0 d-flex align-items-center">Projects</h2>
+                <a href="https://drive.google.com/your-shared-link" target="_blank" rel="noopener"
+                   class="btn btn-portfolio btn-sm ml-3" aria-label="Open full projects portfolio PDF in new tab">
+                    <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" fill="currentColor"/>
+                        <path d="M5 5h6v2H7v10h10v-4h2v6H5z" fill="currentColor"/>
+                    </svg>
+                    <span>Projects portfolio detail PDF</span>
+                </a>
+            </div>
+            <div class="row project-cards">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper">
+                            <img src="assets/projects/portfolio-website.png" class="project-image" alt="Screenshot Project 1">
+                        </div>
+                        <div class="project-body mt-2">
+                            <h5 class="project-title">Personal Portfolio Website</h5>
+                            <div class="project-meta d-flex flex-wrap small text-muted mb-2">
+                                <span class="mr-3"><strong>Year:</strong> 2024</span>
+                                <span><strong>Role:</strong> Developer</span>
+                            </div>
+                            <p class="project-desc mb-2">
+                                A responsive personal website to present my portfolio.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge badge-dark">HTML</span>
+                                <span class="badge badge-secondary">CSS</span>
+                                <span class="badge badge-primary">Bootstrap</span>
+                                <span class="badge badge-info">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper">
+                            <img src="assets/projects/karbonku.png" class="project-image project-image--contain" alt="Screenshot Project 2">
+                        </div>
+                        <div class="project-body mt-2">
+                            <h5 class="project-title">KarbonKU</h5>
+                            <div class="project-meta d-flex flex-wrap small text-muted mb-2">
+                                <span class="mr-3"><strong>Year:</strong> 2024-2025</span>
+                                <span><strong>Role:</strong> Mobile Developer</span>
+                            </div>
+                            <p class="project-desc mb-2">
+                                Android app that helps Indonesians track personal carbon emissions and estimate annual carbon tax.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge badge-success">Flutter</span>
+                                <span class="badge badge-warning text-dark">Firebase</span>
+                                <span class="badge badge-info">Critical & Analytical Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper">
+                            <img src="assets/projects/esign.png" class="project-image project-image--contain" alt="Screenshot Project 3">
+                        </div>
+                        <div class="project-body mt-2">
+                            <h5 class="project-title">Polytron E-Sign (PKWT)</h5>
+                            <div class="project-meta d-flex flex-wrap small text-muted mb-2">
+                                <span class="mr-3"><strong>Year:</strong> 2023</span>
+                                <span><strong>Role:</strong> Developer</span>
+                            </div>
+                            <p class="project-desc mb-2">
+                                Web app that digitizes PKWT contract signing for HR and external parties, saving time and reducing paper use.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge badge-info">Node.JS</span>
+                                <span class="badge badge-secondary">SQL</span>
+                                <span class="badge badge-dark">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 mb-4 mt-4">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper">
+                            <img src="assets/projects/automate.png" class="project-image project-image--contain" alt="Screenshot Project 4">
+                        </div>
+                        <div class="project-body mt-2">
+                            <h5 class="project-title">Polytron Import Automation Flows</h5>
+                            <div class="project-meta d-flex flex-wrap small text-muted mb-2">
+                                <span class="mr-3"><strong>Year:</strong> 2023</span>
+                                <span><strong>Role:</strong> Flow Designer</span>
+                            </div>
+                            <p class="project-desc mb-2">
+                                Streamline import operations by automating repetitive tasks, saving time, improving accuracy, and reducing human error.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge badge-info">Microsoft Power Automate</span>
+                                <span class="badge badge-secondary">Logical Thinking</span>
+                                <span class="badge badge-dark">Process Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Joshua Valentine Manik. 2025</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
