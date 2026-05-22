@@ -11,5 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }

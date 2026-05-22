@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+
+# AI / local project memory files
+.impeccable.md
+PROJECT_MEMORY.md

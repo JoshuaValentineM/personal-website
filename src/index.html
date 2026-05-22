@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua's Portfolio'</title>
+    <title>Joshua's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand font-weight-bold" href="#about"></a>
+        <!-- <a class="navbar-brand font-weight-bold" href="#about">Joshua</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,11 +29,29 @@
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Hi! <span id="typing-text"></span><span class="cursor">|</span></h1>
-        <p>Computer Science Graduate from Binus University</p>
+    <header class="hero-header bg-primary text-white text-center py-5">
+        <div class="container hero-inner">
+            <p class="hero-kicker">Personal Portfolio</p>
+            <h1 class="hero-title" aria-label="Hi! I'm Joshua Valentine Manik.">
+                <span class="hero-title-reserve" aria-hidden="true">
+                    <span class="hero-title-line hero-title-greeting">Hi!</span>
+                    <span class="hero-title-line hero-title-name">I'm Joshua</span>
+                    <span class="hero-title-line hero-title-name">Valentine Manik.</span>
+                </span>
+                <span class="hero-title-live">
+                    <span class="hero-title-line hero-title-greeting">Hi!</span>
+                    <span class="hero-title-line hero-title-name">
+                        <span id="typing-text"></span><span class="cursor cursor-primary">|</span>
+                    </span>
+                    <span class="hero-title-line hero-title-name">
+                        <span id="typing-text-secondary"></span><span class="cursor cursor-secondary">|</span>
+                    </span>
+                </span>
+            </h1>
+            <p class="hero-tagline">Computer Science graduate with a strong interest in building useful, well-crafted digital experiences.</p>
+        </div>
     </header>
-    <main class="container mt-5">
+    <main class="container site-main mt-5">
         <!-- About -->
         <section id="about" class="mb-5">
             <div class="row align-items-center">
@@ -104,7 +125,11 @@
                                             <span class="timeline-date">2022–2023</span>
                                             <h5 class="timeline-title">BNCC – Editorial Coordinator (Filemagz)</h5>
                                         </div>
-                                        <p>Description of my role and contributions.</p>
+                                        <p>Ensured that the writing in every content created by FILE meets the criteria according to PUEBI rules.
+                                        </p>
+                                            <p>Created content that was published through Filemagz and Filetechno accounts on social media and articles on Filemagz.com.
+                                            </p>
+                                            <p>Trained the activists of BNCC on how to produce good content that fits with FILE's procedure, standards, and criteria.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -114,7 +139,11 @@
                                             <span class="timeline-date">2021–2022</span>
                                             <h5 class="timeline-title">BNCC – Activist</h5>
                                         </div>
-                                        <p>Description of my role and contributions.</p>
+                                        <p>Attended in Mobile Development Course using Java and Android Studio.
+                                        </p>
+                                            <p>Attended in Back-End Development Course using Laravel.
+                                            </p>
+                                            <p>Participated in SWOT Analysis Program, Video Editing Training, Content Creation and Media Training, and Technology Project Member, and other programs and events.</p>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +159,15 @@
                                             <span class="timeline-date">2023–2024</span>
                                             <h5 class="timeline-title">BINUS IT Division - Associate Member</h5>
                                         </div>
-                                        <p>Role summary. Tech used: React, Node.js, etc.</p>
+                                        <p>Worked on an application enhancement that is needed for user requirements.
+                                            </p>
+                                            <p>Worked Model, Controller, Service, View, Factory, and Helper using C# or LinQ in .Net Framework on Visual Studio 2022.
+                                            </p>
+                                                <p>Created and managed tables in the database using Microsoft SQL Server.
+                                                </p>
+                                                    <p>Learned how to use Hangfire as a job scheduler for .NET and .NET Core applications.
+                                                    </p>
+                                                    <p>Worked with the team on testing applications/features development before deployment and created pull requests using Azure DevOps.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -140,17 +177,36 @@
                                             <span class="timeline-date">2024–2025</span>
                                             <h5 class="timeline-title">PT Hartono Istana Teknologi (Polytron) - Application Developer</h5>
                                         </div>
-                                        <p>Built small web apps / landing pages for clients.</p>
+                                        <p>Developed the EV Calculator feature/page for the Polytron EV website, enabling users to compare their expenses between conventional vehicles and Polytron electric vehicles.
+                                        </p>
+                                        <p>Designed and built the Polytron E-Sign PKWT Web Application, streamlining the contract signing and approval process by transitioning from physical to digital signatures. Successfully stored over 5,000 contracts to date.
+                                        </p>
+                                        <p>Enhanced Polytron’s internal applications by debugging, optimizing performance, and implementing new features based on user requirements.
+                                        </p>
+                                        <p>Automated business processes using Power Automate, improving efficiency and reducing manual workload across various Polytron operations.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
                                     <span class="timeline-marker"></span>
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
-                                            <span class="timeline-date">2025–Present</span>
+                                            <span class="timeline-date">2025–2026</span>
                                             <h5 class="timeline-title">PT Hartono Istana Teknologi (Polytron) - Import Documentation Officer</h5>
                                         </div>
-                                        <p>Built small web apps / landing pages for clients.</p>
+                                        <p>Created pabean documents (PIB) and maintained import documents for PT Hartono Istana Teknologi</p>
+                                        <p>Created and developed automation for business processes using Power Automate, improving efficiency and reducing manual workload across various shipping Polytron operations.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-marker"></span>
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <span class="timeline-date">2026–Present</span>
+                                            <h5 class="timeline-title">Apple Developer Academy - iOS Developer</h5>
+                                        </div>
+                                        <p>Developed ViRest, an iOS app that helps young adults who don't know what sports are fit to them to choose sports based on their condition by turning user's input (physical condition, sport criteria preferences, and environment) into sports recommendation.
+                                        </p>
+                                            <p>Developed Anak Domba, an iOS app that helps christian to reflect their emotion by provides journaling/reflecting sections, bible verses, and spiritual songs that revelant to each emotion.</p>
                                     </div>
                                 </div>
                             </div>
@@ -267,15 +323,59 @@
                         </div>
                     </div>
                 </div>
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 mb-4 mt-4">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper">
+                            <img src="assets/projects/virest.png" class="project-image project-image--contain" alt="Screenshot Project 5">
+                        </div>
+                        <div class="project-body mt-2">
+                            <h5 class="project-title">ViRest</h5>
+                            <div class="project-meta d-flex flex-wrap small text-muted mb-2">
+                                <span class="mr-3"><strong>Year:</strong> 2026</span>
+                                <span><strong>Role:</strong> iOS Developer</span>
+                            </div>
+                            <p class="project-desc mb-2">
+                                An app that helps young adults who don’t know what sports are fit to them to choose sports based on their condition by turning user’s input (physical conditions, sport criteria preferences, and environment) into sports recommendation.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge badge-info">Swift</span>
+                                <span class="badge badge-secondary">iOS Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4 mb-4 mt-4">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper">
+                            <img src="assets/projects/anak-domba.png" class="project-image project-image--contain" alt="Screenshot Project 6">
+                        </div>
+                        <div class="project-body mt-2">
+                            <h5 class="project-title">Anak Domba</h5>
+                            <div class="project-meta d-flex flex-wrap small text-muted mb-2">
+                                <span class="mr-3"><strong>Year:</strong> 2026</span>
+                                <span><strong>Role:</strong> iOS Developer</span>
+                            </div>
+                            <p class="project-desc mb-2">
+                                An app that helps Christians who wants to conduct a religious self-reflection by guiding them to reflect their feelings with relevant Bible verses and spiritual songs through relevant prompt.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge badge-info">Swift</span>
+                                <span class="badge badge-secondary">iOS Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; Joshua Valentine Manik. 2025</p>
+        <p>&copy; Joshua Valentine Manik. 2026</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=5"></script>
 </body>
 </html>
